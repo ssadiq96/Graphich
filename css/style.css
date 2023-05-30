@@ -1,0 +1,611 @@
+@font-face {
+    font-family: Wixmadefor-regular;
+    src:url(/fonts/WixMadeforDisplay-Regular-BF63eaeedb0e5eb.ttf) format('truetype');
+    font-weight: regular;
+}
+@font-face {
+    font-family: Wixmadefor-medium;
+    src:url(/fonts/WixMadeforDisplay-Medium-BF63eaeed98bfee.ttf) format('truetype');
+    font-weight: medium;
+}
+
+@font-face {
+    font-family: PP telegraf;
+    src:url(/fonts/PPTelegraf-Regular.otf) format('otf');
+    font-weight: medium;
+}
+*{
+    font-family: Wixmadefor-regular;
+}
+
+
+body{
+    background: black;
+    margin:0;
+    padding:0;
+}
+
+.container {
+    position: relative;
+    width: 1300px;
+    margin: 0 auto;
+}
+  @keyframes rotation {
+    0% {
+      transform: rotate3d(1, 1, 1, 0deg);
+    }
+    100% {
+      transform: rotate3d(1, 1, 1, 360deg);
+    }
+  }
+
+  @keyframes rotationrev {
+    0% {
+      transform: rotate3d(1, 1, 1, 360deg);
+    }
+    100% {
+      transform: rotate3d(1, 1, 1, 0deg);
+    }
+  }
+
+.header-main-sticky {
+    position: relative;
+    z-index: 999;
+    mix-blend-mode: difference;
+}
+.logo-div {
+    top: 3%;
+    position: fixed;
+}
+.contact-btn {
+    position: fixed;
+    top: 3%;
+    right: 18%;
+}
+.main-banner-section {
+    margin: 10% 0;
+}
+
+button.contact-txt-btn {
+    background: none;
+    color: #FFF;
+    border: none;
+    font-size: 1.3em;
+    transition:0.2s;
+    cursor: pointer;
+}
+
+button.contact-txt-btn:hover {
+    color: #FF7A00;
+    font-size: 1.4em;
+}
+
+.where {
+    font-size: 7em;
+    margin: 0;
+    text-transform: uppercase;
+    color:#FFFFFF;
+    font-family: PP telegraf;
+}
+
+.main-line-1, .main-line-3 {
+    height: 6.2em;
+    line-height: 0.9;
+    overflow: hidden;
+}
+.main-line-2{
+    display: flex;
+    align-items: center;
+    line-height: 0.9;
+    height: 9em;
+    overflow: hidden;
+}
+
+.discuss-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5%;
+}
+.btn-dsc-mob{
+display: none;
+}
+.discuss {
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    margin: 0;
+    text-decoration: none;
+    color:#FFFFFF;
+    text-transform: uppercase;
+}
+
+.gr-ellipse-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    animation: rotation 2s linear infinite;
+}
+
+.gr-ellipse-2{
+    width: 100px;
+    animation: rotationrev 2s linear infinite;
+}
+
+.purpose{
+    font-size: 7em;
+    margin: 0;
+    text-transform: uppercase;
+    color:#FFFFFF;
+    font-family: PP telegraf;
+}
+
+.creativity {
+    font-size: 7em;
+    margin: 0;
+    text-transform: uppercase;
+    color:#FFFFFF;
+    font-family: PP telegraf;
+}
+
+.gr-sphere-img {
+    top: -5%;
+    right: 5%;
+    z-index: -1;
+    position: absolute;
+    animation: ring 10s linear infinite;
+}
+@keyframes ring {
+    0% {
+      transform: rotateZ(0deg);
+    }
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
+
+.why-who {
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+    align-items: center;
+    margin: 5% 0;
+}
+
+.left-text {
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.left-text-1 {
+    margin: 1% 0;
+    height: 1em;
+    overflow: hidden;
+}
+
+.left-text-2 {
+    height: 1em;
+    overflow: hidden;
+}
+
+.right-text {
+    font-size: 0.9em;
+    width: 50%;
+}
+
+.who-we-are {
+    display: flex;
+    margin: 5% 0;
+}
+
+.who-title {
+    overflow: hidden;
+    height: 6em;
+}
+
+.who-title-inner {
+    margin:0 0 5% 0;
+    font-size: 6em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: PP telegraf;
+}
+
+.who-inner-flex {
+    display: flex;
+    margin: 5% 0 0 0;
+}
+
+.who-inner-left {
+    margin-right: 10%;
+    color: #FFF;
+    font-size: 1em;
+}
+
+.who-inner-right {
+    margin-right: 10%;
+    color: #FFF;
+    font-size: 1em;
+}
+
+.team-image {
+    width: 25em;
+}
+
+
+.what-title {
+    height: 6em;
+    overflow: hidden;
+}
+
+.what-title-inner {
+    font-size: 6em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: PP telegraf;
+    margin: 0;
+}
+
+.what-services-flex {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0 0 0;
+}
+img.service-poster {
+    height: 300px;
+    width: 250px;
+    object-fit: cover;
+}
+
+.service-name {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sevice-head {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: #FFFF;
+    margin: 5% 0;
+    transition: 0.2s;
+}
+.sevice-head:hover {
+    color: #FF7A00;
+}
+
+.icon-img {
+    height: 15px;
+    width: 15px;
+    object-fit: cover;
+}
+
+.our-process {
+    margin: 5% 0 10% 0;
+}
+
+.our-process-title {
+    overflow: hidden;
+    height: 6em;
+    margin: 5%  0;
+}
+
+.process-title-inner{
+    font-size: 6em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: PP telegraf;
+}
+
+.p-process{
+    margin:0;
+    font-family:Wixmadefor-medium;
+}
+
+.our-process-flex{
+    display:flex;
+    justify-content: space-between;
+}
+.gr-process-block {
+    margin: 0 0.5em;
+    cursor: pointer;
+}
+.process-block-inner {
+    background-color: white;
+    text-align: center;
+    height: 400px;
+}
+
+.gr-process-digit {
+    color: #000;
+    font-family: Wixmadefor-regular;
+    padding: 1em 0 3.5em 0;
+    font-size: 1.2em;
+}
+
+.gr-process-digit-expand {
+    color: #000;
+    font-family: PP telegraf;
+    padding: 5%;
+    font-size: 1.2em;
+    text-align: start;
+}
+.process-name {
+    color: #000;
+    font-family: 'Wixmadefor-regular';
+    writing-mode: vertical-lr;
+    width: 4em;
+    white-space: nowrap;
+    align-items: center;
+    margin: 0 0 0 30%;
+}
+
+.process-name-expand {
+    text-align: start;
+    padding: 0 0 0 5%;
+    font-size: 2em;
+    font-family: PP telegraf;
+    font-weight: 500 !important;
+}
+
+.process-details-expand {
+    padding: 0 5%;
+    text-align: initial;
+    font-size: 1.2em;
+}
+
+.process-details-hide{
+    display:none;
+}
+@media (max-width: 1024px) {
+    .container {
+        width: 95%;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+
+    .contact-btn {
+        right: 3%;
+    }
+
+    .gr-sphere-img {
+        right: 15%;
+    }
+    .main-line-1, .main-line-3 {
+        height: 100px;
+    }
+    .main-line-2 {
+        height: 12.5em;
+    }
+    .who-we-are {
+        display: block;
+    }
+    .left-text-2 {
+        height: 3em;
+    }
+    .team-image {
+        width: 45em;
+    }
+    .who-inner-flex {
+        display: block;
+    }
+    .who-inner-left {
+        margin-right:0;
+    }
+    .who-inner-right {
+        padding: 10px 0;
+        margin-right:0;
+    }
+
+    .what-services-flex {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 33% 33% 33%;
+        margin: 5% 0 0 0;
+    }
+
+    img.service-poster {
+        height: 260px;
+        width: 220px;
+        object-fit: cover;
+    }
+}
+
+@media (width: 1024px) {
+    .gr-sphere-img {
+        right: 10%;
+    }
+    .left-text-2 {
+        height: 3em;
+    }
+    img.service-poster {
+        height: 350px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .container {
+        width: 95%;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+
+    .main-banner-section {
+        margin: 30% 0 10%;
+    }
+    img.main-logo {
+        width: 80%;
+    }
+
+    button.contact-txt-btn {
+        font-size: 1.2em;
+    }
+    .main-line-1, .main-line-3 {
+        height: 60px;
+        text-align: center;
+    }
+    .main-line-2 {
+        height: 110px;
+        display: block;
+        text-align: center;
+    }
+    .where {
+        font-size: 60px;
+    }
+    .discuss-btn{
+        display: none;
+    }
+    .discuss {
+        margin: 30px 0;
+    }
+    .btn-dsc-mob{
+        display: block;
+        position: relative;
+        text-align: center;
+    }
+
+    .gr-ellipse-1 {
+        position: absolute;
+        top: initial;
+        left: initial;
+        width: 100px;
+        animation: rotation 2s linear infinite;
+    }
+    .purpose {
+        font-size: 60px;
+    }
+    .creativity{
+        font-size: 60px;
+    }
+
+    .gr-sphere-img {
+        top: 50%;
+        width: 71%;
+        right: 16%;
+    }
+
+    .why-who {
+        display: block;
+    }
+    .left-text {
+        font-size: 24px;
+    }
+    .left-text-1 {
+        height: 55px;
+        text-align: center;
+    }
+
+    .left-text-2 {
+        height: 90px;
+        text-align: center;
+    }
+
+    .right-text {
+        font-size: 20px;
+        width: 100%;
+        padding:10px 0 ;
+        text-align: center;
+    }
+
+    .who-we-are {
+        display: block;
+    }
+    .who-title {
+        height: 50px;
+    }
+    .who-title-inner {
+        font-size: 46px;
+    }
+    .who-inner-flex {
+        display: block;
+    }
+    .who-inner-left {
+        font-size: 20px;
+        text-align: center;
+    }
+    .who-inner-right {
+        font-size: 20px;
+        text-align: center;
+    }
+    .who-image {
+        padding: 20px 0;
+    }
+    .team-image {
+        width: 360px;
+    }
+
+    .what-title {
+        height: 50px;
+    }
+
+    .what-title-inner {
+        font-size: 46px;
+    }
+
+    .service-1 {
+        padding: 20px 0;
+    }
+    img.service-poster {
+        height: 400px;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .what-services-flex {
+        display: block;
+    }
+
+    .our-process-title {
+        height: 50px;
+    }
+
+    .process-title-inner {
+        font-size: 46px;
+    }
+
+    .our-process-flex {
+        display: block;
+    }
+
+    .process-block-inner {
+        height: auto;
+        padding: 10px;
+        margin: 10px 0;
+    }
+    .gr-process-digit {
+        color: #000;
+        font-family: Wixmadefor-regular;
+        padding: 5px 0;
+        font-size: 24px;
+        margin: 5px 0;
+    }
+
+    .gr-process-digit-expand {
+        color: #000;
+        font-family: Wixmadefor-regular;
+        padding: 5px 0;
+        font-size: 24px;
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    .process-name {
+        writing-mode: inherit;
+        width: auto;
+        margin: 0 0 0;
+        font-size: 24px;
+    }
+    
+    .process-name-expand {
+        text-align: center;
+        padding: 0;
+        font-size: 24px;
+        margin: 10px 0;
+    }
+
+  }
